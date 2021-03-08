@@ -2,6 +2,10 @@
 
 <ul>
 <% @study_items.each do |si| %>
-  <li><%= si %></li>
+
+  <li>
+    <%= si.title %> - <%=si.category %>
+  </li>
+
 <% end %>
 </ul>
