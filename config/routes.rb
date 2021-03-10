@@ -3,8 +3,6 @@ Rails.application.routes.draw do
   #get '/', to: 'home#index' 
   root to: 'home#index'
 
-  resources :study_items, only: [:show]
-
-
+  resources :study_items, only: [:show, :new, :create]
 
 end

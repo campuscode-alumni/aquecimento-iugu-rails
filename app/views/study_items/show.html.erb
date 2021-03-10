@@ -1,1 +1,6 @@
 <%= @study_item.title %>
+
+
+<% if @study_item.done? %>
+  Feito
+<% end %>
