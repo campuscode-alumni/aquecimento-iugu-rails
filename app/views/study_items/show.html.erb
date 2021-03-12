@@ -1,6 +1,9 @@
 <%= @study_item.title %>
 
+<%#= link_to 'Editar', edit_study_item_path(@study_item) %>
 
 <% if @study_item.done? %>
   Feito
+<% else %>
+  <%= button_to 'Marcar como feito', mark_as_done_study_item_path(@study_item), method: :patch %>
 <% end %>
