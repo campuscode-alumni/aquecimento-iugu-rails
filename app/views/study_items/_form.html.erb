@@ -1,3 +1,7 @@
+<% study_item.errors.full_messages.each do |message| %>
+  <p><%= message %></p>
+<% end %>
+
 <%= form_with(model: study_item) do |f| %>
   <div>
     <%= f.label :title, 'Título' %>
