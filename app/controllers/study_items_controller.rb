@@ -47,6 +47,6 @@ class StudyItemsController < ApplicationController
     end
 
     def study_item_params
-      params.require(:study_item).permit(:title, :category, :done)
+      params.require(:study_item).permit(:title, :category_id, :done)
     end
 end

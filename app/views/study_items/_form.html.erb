@@ -4,8 +4,8 @@
     <%= f.text_field :title, required: "required"  %>
   </div>
   <div>
-    <%= f.label :category, 'Categoria' %>
-    <%= f.select :category, ['Ruby', 'Rails', 'Fundamentos'].sort, prompt: 'Escolha uma categoria' %>
+    <%= f.label :category_id, 'Categoria' %>
+    <%= f.collection_select :category_id, Category.all, :id, :title %>
   </div>
   <div>
     <span>Feito?</span>
